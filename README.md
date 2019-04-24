@@ -88,6 +88,7 @@ Status Code: **400**
 
 #### Invalid date format
 *Dates have to have the format 'yyyy-mm-yy'*
+
 Status Code: **405**
 ```json
 {
@@ -97,6 +98,7 @@ Status Code: **405**
 
 #### Invalid pick format
 *Each "pick" is a set of 5 integers (from `1`-`69`) along with a 6th integer (the Powerball, from `1`-`26`).*
+
 Status Code: **405**
 ```json
 {
