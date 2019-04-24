@@ -1,6 +1,6 @@
 # Powerball API - David Osemwegie
 
-The API accepts data for a lottery ticket and respons with wether each pick that user chose won, the prize won per pick and the total of all the prizes won.
+The API accepts data for a lottery ticket and responds with wether each pick that user chose won, the prize won per pick and the total of all the prizes won.
 
 ## Additions Made:
 - Created `draw.js` file
@@ -30,13 +30,15 @@ node index.js
 App listening on port 3000
 ```
 
-With **Postman** you can send a request to the following endpoint:
+With **Postman** you can send a request to the following endpoints:
+
+`http://localhost:3000/`
 
 `http://localhost:3000/draw`
 
 ## API Documentation
 
-The body of the post request should contain the **Ticket** object that looks like this:
+The body of the post request should contain a **Ticket** object that looks like this:
 ```json
 {
   "date": "2019-04-20",
