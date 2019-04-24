@@ -29,7 +29,9 @@ You should see an output like this:
 node index.js
 App listening on port 3000
 ```
-You can send post request to the endpoint:
+
+With **Postman** you can send a request to the following endpoint:
+
 `http://localhost:3000/draw`
 
 ## API Documentation
