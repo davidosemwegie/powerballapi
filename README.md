@@ -36,7 +36,7 @@ With **Postman** you can send a request to the following endpoint:
 
 ## API Documentation
 
-The body of end post request should contain the **Ticket** object that looks like this:
+The body of the post request should contain the **Ticket** object that looks like this:
 ```json
 {
   "date": "2019-04-20",
@@ -49,7 +49,7 @@ The body of end post request should contain the **Ticket** object that looks lik
 ```
 ***Users can put as many picks as they would like.***
 
-Afer the data has been sent, you should get a response that shows how matching numbers you got and the prize you won. The object should look like this:
+Afer the data has been sent, you should get a response that shows how many matching numbers you got and the prize you won. The object should look like this:
 ```json
 {
     "date": "2019-04-20",
