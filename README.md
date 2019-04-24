@@ -1,6 +1,6 @@
 # Powerball API - David Osemwegie
 
-This API is going to be used to check a user's Powerball lottery picks.
+The API accepts data for a lottery ticket and respons with wether each pick that user chose won, the prize won per pick and the total of all the prizes won.
 
 ## Additions Made:
 - Created `draw.js` file
@@ -32,7 +32,7 @@ App listening on port 3000
 You can send post request to the endpoint:
 `http://localhost:3000/draw`
 
-## API DOCUMENTATION
+## API Documentation
 
 The body of end post request should contain the **Ticket** object that looks like this:
 ```json
@@ -45,7 +45,7 @@ The body of end post request should contain the **Ticket** object that looks lik
     ]
 }
 ```
-***User can put as many picks as they would like***
+***Users can put as many picks as they would like.***
 
 Afer the data has been sent, you should get a response that shows how matching numbers you got and the prize you won. The object should look like this:
 ```json
@@ -76,7 +76,7 @@ Afer the data has been sent, you should get a response that shows how matching n
 }
 ```
 ### Errors
-There are 3 different types of errors that can be gotten
+There are 3 different types of errors that can be gotten.
 
 #### No Powerball draw that date
 Status Code: **400**
@@ -86,7 +86,8 @@ Status Code: **400**
 }
 ```
 
-#### Invalid Date format
+#### Invalid date format
+*Dates have to have the format 'yyyy-mm-yy'*
 Status Code: **405**
 ```json
 {
@@ -95,6 +96,7 @@ Status Code: **405**
 ```
 
 #### Invalid pick format
+*Each "pick" is a set of 5 integers (from `1`-`69`) along with a 6th integer (the Powerball, from `1`-`26`).*
 Status Code: **405**
 ```json
 {
@@ -104,7 +106,7 @@ Status Code: **405**
 
 The link to the API documentation can be found [here](https://app.swaggerhub.com/apis-docs/David31/powerball/1.0.0-oas3) 
 
-## TEST
+## Testing
 To run the written tests, run this:
 `npm test`
 
